@@ -2,22 +2,17 @@
 
 **Nigeria, Lagos** | [Open Portfolio](https://untitleddev-portfolio.vercel.app/) | [LinkedIn](https://www.linkedin.com/in/ahmed940)
 
-Dedicated Software Developer specializing in front-end development with a strong focus on creating secure, scalable, and user-friendly applications. Proven experience in device security, verification, and digital platforms.
+Passionate and experienced web developer with a strong technical skill set, aiming to leverage expertise in developing innovative web applications and drive technological advancements.
 
-<img align="right" height="300" src="https://i.pinimg.com/originals/f1/e7/34/f1e734f9cade86fe737a9aa404ad5677.gif" />
+<img align="right" height="320" src="https://media1.tenor.com/m/LBBkCdGFI4EAAAAC/naruto-minato.gif" />
 
 ## Programming Languages & Tools
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,js,ts,html,css,python,nodejs,express,mongodb,git,firebase,vscode,vercel,sql&perline=7" />
+  </a>
+</p>
 
 ## Most Used & Stats
 
@@ -39,7 +34,7 @@ Dedicated Software Developer specializing in front-end development with a strong
 
 ## Languages
 
-🇬🇧 English – *Fluent* &nbsp; | &nbsp; 🇳🇬 Hausa – *Intermediate* &nbsp; | &nbsp; 🇳🇬 Yoruba – *Native*
+🇬🇧 English – *Fluent* &nbsp; | &nbsp; Hausa – *Intermediate* &nbsp; | &nbsp; Yoruba – *Native*
 
 ---
 
@@ -58,9 +53,5 @@ Dedicated Software Developer specializing in front-end development with a strong
 <div align="center">
   
   [![Portfolio](https://img.shields.io/badge/Check_Out_My_Portfolio-58a6ff?style=for-the-badge&logo=vercel&logoColor=white)](https://untitleddev-portfolio.vercel.app/)
-
-  <br/>
-
-  *"Building the future, one commit at a time."*
 
 </div>
