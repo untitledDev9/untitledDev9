@@ -10,11 +10,19 @@ Passionate and experienced web developer with a strong technical skill set, aimi
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,js,ts,html,css,python,nodejs,express,mongodb,git,firebase,vscode,vercel,sql&perline=7" />
+    <img src="https://skillicons.dev/icons?i=react,js,ts,html,css,python,nodejs,express,mongodb,firebase,git,vscode,vercel,sql&perline=7" />
   </a>
 </p>
 
-## Most Used & Stats
+## Most Used
+
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,js,html,css,nodejs,mongodb,git&perline=7" />
+  </a>
+</p>
+
+## Stats
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=untitleddev9&show_icons=true&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&count_private=true" height="170" />
