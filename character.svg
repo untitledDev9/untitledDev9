@@ -1,0 +1,94 @@
+<svg width="340" height="600" viewBox="0 0 340 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="untitleDdev — glitch cyber-ninja operator">
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#0f3d24" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#08200f" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cloak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c2417"/><stop offset="55%" stop-color="#081a10"/><stop offset="100%" stop-color="#04100a"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3fb950"/><stop offset="100%" stop-color="#7ee787"/>
+    </linearGradient>
+    <filter id="g" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1.2" fill="#000000" opacity="0.30"/></pattern>
+    <path id="sil" d="M170 56 C116 58 80 100 72 160 C66 196 70 232 96 256 L60 300 C40 360 34 460 36 588 L304 588 C306 460 300 360 280 300 L244 256 C270 232 274 196 268 160 C260 100 224 58 170 56 Z"/>
+    <clipPath id="figclip"><use href="#sil"/></clipPath>
+    <clipPath id="b1"><rect x="0" y="150" width="340" height="48"/></clipPath>
+    <clipPath id="b2"><rect x="0" y="256" width="340" height="36"/></clipPath>
+    <clipPath id="b3"><rect x="0" y="336" width="340" height="50"/></clipPath>
+    <clipPath id="b4"><rect x="0" y="432" width="340" height="58"/></clipPath>
+    <style>
+      @keyframes flk { 0%,90%{opacity:.5} 91%{opacity:.85} 92%{opacity:.15} 94%{opacity:.75} 100%{opacity:.5} }
+      .ghost { mix-blend-mode: screen; animation: flk 1.7s infinite steps(1,end); }
+      @keyframes eye { 0%,88%{opacity:1} 90%{opacity:.2} 92%{opacity:1} 96%{opacity:.5} 100%{opacity:1} }
+      .eye { animation: eye 2.4s infinite; }
+      @keyframes band { 0%{transform:translateY(-20px);opacity:0} 5%{opacity:.8} 16%{opacity:.8} 22%{opacity:0} 100%{transform:translateY(620px);opacity:0} }
+      .band { animation: band 2.8s linear infinite; }
+      @keyframes hue { 0%,100%{opacity:.45} 50%{opacity:.8} }
+      .halo { animation: hue 3.5s ease-in-out infinite; }
+      @keyframes jit { 0%,96%{transform:translate(0,0)} 97%{transform:translate(-3px,1px)} 98%{transform:translate(2px,-1px)} 100%{transform:translate(0,0)} }
+      .rig { animation: jit 2.2s infinite steps(1,end); }
+      @media (prefers-reduced-motion: reduce){ .ghost,.band,.eye,.halo,.rig{animation:none} }
+    </style>
+  </defs>
+
+  <ellipse class="halo" cx="170" cy="250" rx="180" ry="260" fill="url(#halo)"/>
+
+  <g class="rig">
+    <use href="#sil" class="ghost" fill="#ff2d6f"><animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0 0;0 0;0 0;-7 0;0 0;-13 1;0 0;0 0;5 0;0 0;0 0;0 0" dur="1.7s" repeatCount="indefinite"/></use>
+    <use href="#sil" class="ghost" fill="#19f0d8"><animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0 0;0 0;6 0;0 0;11 -1;0 0;0 0;0 0;-4 0;0 0;0 0;0 0" dur="1.7s" repeatCount="indefinite"/></use>
+
+    <g id="figure">
+    <use href="#sil" fill="url(#cloak)" stroke="url(#rim)" stroke-width="2" stroke-opacity="0.85"/>
+    <g clip-path="url(#figclip)">
+      <path d="M60 300 L130 320 L120 588 L36 588 Z" fill="#04100a" opacity="0.6"/>
+      <path d="M280 300 L210 320 L220 588 L304 588 Z" fill="#04100a" opacity="0.6"/>
+      <g stroke="#1f6f3f" stroke-opacity="0.7" stroke-width="1.5" fill="none">
+        <path d="M170 268 L170 588"/><path d="M150 300 L120 588"/><path d="M190 300 L220 588"/>
+        <path d="M170 360 L130 420"/><path d="M170 360 L210 420"/>
+      </g>
+      <circle cx="170" cy="360" r="22" fill="none" stroke="url(#rim)" stroke-width="2.5" filter="url(#g)"/>
+      <circle cx="170" cy="360" r="9" fill="#0c2417" stroke="#7ee787" stroke-width="1.5"/>
+      <path d="M170 351 L176 360 L170 369 L164 360 Z" fill="#7ee787"/>
+      <rect x="0" y="0" width="340" height="600" fill="url(#scan)"/>
+    </g>
+    <path d="M118 150 C120 108 220 108 222 150 C226 214 200 256 170 258 C140 256 114 214 118 150 Z" fill="#03100a" stroke="url(#rim)" stroke-width="1.5" stroke-opacity="0.5"/>
+    <g class="eye" filter="url(#g)" fill="#aff5b4">
+      <path d="M138 178 L162 172 L160 188 L140 190 Z"/><path d="M202 178 L178 172 L180 188 L200 190 Z"/>
+    </g>
+    <g fill="#eafff0" opacity="0.9"><circle cx="150" cy="182" r="2.4"/><circle cx="190" cy="182" r="2.4"/></g>
+    <path d="M170 56 C116 58 80 100 72 160" fill="none" stroke="#7ee787" stroke-width="2" stroke-opacity="0.7" filter="url(#g)"/>
+    <path d="M170 56 C224 58 260 100 268 160" fill="none" stroke="#7ee787" stroke-width="2" stroke-opacity="0.7" filter="url(#g)"/>
+    </g>
+
+  <use href="#figure" clip-path="url(#b1)" opacity="0.92"><animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0 0;0 0;0 0;0 0;22 0;0 0;0 0;0 0;0 0;0 0" dur="2.7s" repeatCount="indefinite"/></use>
+  <g clip-path="url(#b1)" style="mix-blend-mode:screen">
+    <rect x="0" y="150" width="340" height="48" fill="#19f0d8" opacity="0.18"/>
+  </g>
+  <use href="#figure" clip-path="url(#b2)" opacity="0.92"><animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0 0;0 0;-26 0;0 0;0 0;0 0;0 0;12 0;0 0;0 0" dur="2.0s" repeatCount="indefinite"/></use>
+  <g clip-path="url(#b2)" style="mix-blend-mode:screen">
+    <rect x="0" y="256" width="340" height="36" fill="#ff2d6f" opacity="0.18"/>
+  </g>
+  <use href="#figure" clip-path="url(#b3)" opacity="0.92"><animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0 0;0 0;0 0;0 0;0 0;-16 0;0 0;0 0;30 0;0 0" dur="3.2s" repeatCount="indefinite"/></use>
+  <g clip-path="url(#b3)" style="mix-blend-mode:screen">
+    <rect x="0" y="336" width="340" height="50" fill="#19f0d8" opacity="0.18"/>
+  </g>
+  <use href="#figure" clip-path="url(#b4)" opacity="0.92"><animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0 0;14 0;0 0;0 0;0 0;0 0;-24 0;0 0;0 0;0 0" dur="1.7s" repeatCount="indefinite"/></use>
+  <g clip-path="url(#b4)" style="mix-blend-mode:screen">
+    <rect x="0" y="432" width="340" height="58" fill="#ff2d6f" opacity="0.18"/>
+  </g>
+
+  <g clip-path="url(#figclip)">
+    <rect class="band" x="0" y="0" width="340" height="12" fill="#7ee787" opacity="0"/>
+  </g>
+  </g>
+
+  <text x="322" y="300" fill="#3a6b4d" font-family="'JetBrains Mono',monospace" font-size="11" letter-spacing="4" transform="rotate(90 322 300)" opacity="0.8">SYS://untitleDdev</text>
+  <g stroke="#56d364" stroke-width="2" fill="none" opacity="0.75">
+    <path d="M8 22 v-12 h12"/><path d="M332 22 v-12 h-12"/><path d="M8 578 v12 h12"/><path d="M332 578 v12 h-12"/>
+  </g>
+</svg>

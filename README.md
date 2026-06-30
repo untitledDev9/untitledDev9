@@ -40,21 +40,35 @@
 
 ## ⚡ `whoami`
 
+<table border="0"><tr>
+<td valign="top" width="60%">
+
 I build products that solve real problems — from **device-security platforms** to **business-verification tools**. My work spans the full stack: product design, frontend, backend, mobile, APIs, and database architecture.
 
-Currently founding **GadgetVault** and building **CheckAm**, while leading development teams and shipping production applications across React Native and the web.
+Currently founding **GadgetVault** and building **CheckAm**, while leading dev teams and shipping production apps across React Native and the web.
+
+- 🔭 &nbsp; Focused on mobile + web products that **scale**
+- 🧩 &nbsp; Owning products **end-to-end** — design → deploy
+- ⚡ &nbsp; Clean architecture & real-world impact
+- 🌱 &nbsp; **B.Sc. Computer Science** @ NOUN
 
 ```ts
 const untitleDdev = {
-  role:     "Full-Stack Developer & Founder",
-  company:  "GadgetVault",
-  location: "Nigeria 🇳🇬",
-  focus:    ["mobile + web that scales", "clean architecture", "real-world impact"],
-  ownsEndToEnd: "design → frontend → backend → mobile → APIs → db",
-  learning: "B.Sc. Computer Science @ NOUN",
-  motto:    "Turning ideas into real products.",
+  role:    "Full-Stack Developer & Founder",
+  company: "GadgetVault",
+  stack:   ["React", "React Native", "Node", "TS"],
+  motto:   "Turning ideas into real products.",
 };
 ```
+
+</td>
+<td valign="top" width="40%" align="center">
+
+<!-- Self-hosted animated RGB-glitch operator (character.svg) -->
+<img width="290" src="./character.svg" alt="untitleDdev — glitch operator" />
+
+</td>
+</tr></table>
 
 <img width="100%" src="./divider.svg" alt="" />
 
