@@ -148,7 +148,7 @@ A **business-verification platform** that helps users confirm the legitimacy of 
 
 <br/>
 
-<img width="95%" src="https://github-profile-trophy.vercel.app/?username=untitledDev9&theme=matrix&no-frame=true&no-bg=true&margin-w=4&column=7&row=1" alt="trophies" />
+<img width="95%" src="https://github-profile-trophy.vercel.app/?username=untitledDev9&theme=gruvbox&no-frame=true&no-bg=true&margin-w=4&column=7&row=1" alt="trophies" />
 
 <br/>
 
