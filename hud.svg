@@ -1,0 +1,126 @@
+<svg width="900" height="380" viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Fira Code',ui-monospace,monospace" role="img" aria-label="Operator dossier — skill HUD">
+  <defs>
+    <linearGradient id="hbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06140d"/>
+      <stop offset="100%" stop-color="#020a07"/>
+    </linearGradient>
+    <linearGradient id="hbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1f6f3f"/>
+      <stop offset="100%" stop-color="#7ee787"/>
+    </linearGradient>
+    <radialGradient id="radar" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#56d364" stop-opacity="0.0"/>
+      <stop offset="80%" stop-color="#56d364" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#56d364" stop-opacity="0.9"/>
+    </radialGradient>
+    <filter id="hglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="hround"><rect width="900" height="380" rx="16"/></clipPath>
+    <style>
+      @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0.15} }
+      .live { animation: blink 1.2s steps(1) infinite; }
+      @keyframes scan { 0%{transform:translateY(0);opacity:0} 10%{opacity:.5} 90%{opacity:.5} 100%{transform:translateY(380px);opacity:0} }
+      .scan { animation: scan 6s linear infinite; }
+      @keyframes pulse { 0%,100%{opacity:.35} 50%{opacity:1} }
+      .ping { animation: pulse 2s ease-in-out infinite; }
+      @media (prefers-reduced-motion: reduce){ .scan{animation:none} }
+    </style>
+  </defs>
+
+  <g clip-path="url(#hround)">
+    <rect width="900" height="380" fill="url(#hbg)"/>
+
+    <!-- header bar -->
+    <rect x="0" y="0" width="900" height="46" fill="#0a1810"/>
+    <line x1="0" y1="46" x2="900" y2="46" stroke="#1f6f3f" stroke-opacity="0.6"/>
+    <text x="28" y="30" font-size="16" fill="#7ee787" font-weight="700" letter-spacing="2">// OPERATOR DOSSIER</text>
+    <g class="live">
+      <circle cx="792" cy="23" r="5" fill="#56d364"/>
+      <text x="806" y="28" font-size="13" fill="#56d364" font-weight="700">LIVE</text>
+    </g>
+    <text x="860" y="28" font-size="13" fill="#3a6b4d" text-anchor="end" font-weight="700"></text>
+
+    <!-- LEFT: class card -->
+    <rect x="28" y="70" width="284" height="280" rx="10" fill="#08160e" stroke="#1f6f3f" stroke-opacity="0.7"/>
+    <text x="48" y="104" font-size="13" fill="#4f8a66" letter-spacing="1">CALLSIGN</text>
+    <text x="48" y="132" font-size="24" fill="#7ee787" font-weight="800" filter="url(#hglow)">untitleDdev</text>
+
+    <text x="48" y="170" font-size="13" fill="#4f8a66" letter-spacing="1">CLASS</text>
+    <text x="48" y="190" font-size="15" fill="#9fdcad" font-weight="600">Full-Stack Engineer</text>
+
+    <text x="48" y="222" font-size="13" fill="#4f8a66" letter-spacing="1">RANK</text>
+    <text x="48" y="242" font-size="15" fill="#9fdcad" font-weight="600">Founder · Team Lead</text>
+
+    <text x="48" y="274" font-size="13" fill="#4f8a66" letter-spacing="1">REGION</text>
+    <text x="48" y="294" font-size="15" fill="#9fdcad" font-weight="600">Nigeria</text>
+
+    <!-- radar -->
+    <g transform="translate(258,300)">
+      <circle r="34" fill="#06140d" stroke="#1f6f3f" stroke-opacity="0.8"/>
+      <circle r="22" fill="none" stroke="#1f6f3f" stroke-opacity="0.5"/>
+      <circle r="11" fill="none" stroke="#1f6f3f" stroke-opacity="0.5"/>
+      <line x1="-34" y1="0" x2="34" y2="0" stroke="#1f6f3f" stroke-opacity="0.4"/>
+      <line x1="0" y1="-34" x2="0" y2="34" stroke="#1f6f3f" stroke-opacity="0.4"/>
+      <g>
+        <path d="M0 0 L0 -34 A34 34 0 0 1 24 -24 Z" fill="url(#radar)"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.5s" repeatCount="indefinite"/>
+      </g>
+      <circle class="ping" cx="14" cy="-12" r="2.6" fill="#aff5b4"/>
+      <circle class="ping" cx="-9" cy="16" r="2.2" fill="#aff5b4"/>
+    </g>
+
+    <!-- RIGHT: skill tree -->
+    <text x="356" y="92" font-size="14" fill="#4f8a66" letter-spacing="2">▌ SKILL TREE — XP</text>
+
+    <!-- bar template repeated -->
+    <!-- 1 -->
+    <text x="356" y="128" font-size="13" fill="#9fdcad" font-weight="700">REACT / REACT NATIVE</text>
+    <text x="852" y="128" font-size="12" fill="#56d364" text-anchor="end" font-weight="700">95</text>
+    <rect x="356" y="134" width="496" height="11" rx="5.5" fill="#0d2417" stroke="#1f6f3f" stroke-opacity="0.6"/>
+    <rect x="356" y="134" width="0" height="11" rx="5.5" fill="url(#hbar)"><animate attributeName="width" values="0;471" dur="1.5s" begin="0.2s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/></rect>
+
+    <!-- 2 -->
+    <text x="356" y="170" font-size="13" fill="#9fdcad" font-weight="700">NODE.JS / EXPRESS</text>
+    <text x="852" y="170" font-size="12" fill="#56d364" text-anchor="end" font-weight="700">90</text>
+    <rect x="356" y="176" width="496" height="11" rx="5.5" fill="#0d2417" stroke="#1f6f3f" stroke-opacity="0.6"/>
+    <rect x="356" y="176" width="0" height="11" rx="5.5" fill="url(#hbar)"><animate attributeName="width" values="0;446" dur="1.5s" begin="0.35s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/></rect>
+
+    <!-- 3 -->
+    <text x="356" y="212" font-size="13" fill="#9fdcad" font-weight="700">TYPESCRIPT</text>
+    <text x="852" y="212" font-size="12" fill="#56d364" text-anchor="end" font-weight="700">88</text>
+    <rect x="356" y="218" width="496" height="11" rx="5.5" fill="#0d2417" stroke="#1f6f3f" stroke-opacity="0.6"/>
+    <rect x="356" y="218" width="0" height="11" rx="5.5" fill="url(#hbar)"><animate attributeName="width" values="0;437" dur="1.5s" begin="0.5s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/></rect>
+
+    <!-- 4 -->
+    <text x="356" y="254" font-size="13" fill="#9fdcad" font-weight="700">UI / PRODUCT DESIGN</text>
+    <text x="852" y="254" font-size="12" fill="#56d364" text-anchor="end" font-weight="700">92</text>
+    <rect x="356" y="260" width="496" height="11" rx="5.5" fill="#0d2417" stroke="#1f6f3f" stroke-opacity="0.6"/>
+    <rect x="356" y="260" width="0" height="11" rx="5.5" fill="url(#hbar)"><animate attributeName="width" values="0;456" dur="1.5s" begin="0.65s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/></rect>
+
+    <!-- 5 -->
+    <text x="356" y="296" font-size="13" fill="#9fdcad" font-weight="700">MONGODB / SQL</text>
+    <text x="852" y="296" font-size="12" fill="#56d364" text-anchor="end" font-weight="700">85</text>
+    <rect x="356" y="302" width="496" height="11" rx="5.5" fill="#0d2417" stroke="#1f6f3f" stroke-opacity="0.6"/>
+    <rect x="356" y="302" width="0" height="11" rx="5.5" fill="url(#hbar)"><animate attributeName="width" values="0;422" dur="1.5s" begin="0.8s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/></rect>
+
+    <!-- 6 -->
+    <text x="356" y="338" font-size="13" fill="#9fdcad" font-weight="700">APIs / SYSTEM ARCHITECTURE</text>
+    <text x="852" y="338" font-size="12" fill="#56d364" text-anchor="end" font-weight="700">88</text>
+    <rect x="356" y="344" width="496" height="11" rx="5.5" fill="#0d2417" stroke="#1f6f3f" stroke-opacity="0.6"/>
+    <rect x="356" y="344" width="0" height="11" rx="5.5" fill="url(#hbar)"><animate attributeName="width" values="0;437" dur="1.5s" begin="0.95s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/></rect>
+
+    <!-- scanline -->
+    <rect class="scan" x="0" y="0" width="900" height="2" fill="#56d364" opacity="0"/>
+
+    <!-- corner brackets -->
+    <g stroke="#56d364" stroke-width="2" fill="none" opacity="0.85">
+      <path d="M14 64 v-8 h8"/>
+      <path d="M886 64 v-8 h-8"/>
+      <path d="M14 366 v8 h8"/>
+      <path d="M886 366 v8 h-8"/>
+    </g>
+  </g>
+  <rect x="1" y="1" width="898" height="378" rx="15" fill="none" stroke="#1f6f3f" stroke-opacity="0.6"/>
+</svg>

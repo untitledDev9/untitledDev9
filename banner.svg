@@ -1,38 +1,128 @@
-<svg width="900" height="240" viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Fira Code',ui-monospace,monospace">
+<svg width="1000" height="320" viewBox="0 0 1000 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Fira Code',ui-monospace,monospace" role="img" aria-label="Ahmed Suleiman — Full-Stack Developer">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0a1410"/>
-      <stop offset="100%" stop-color="#04120c"/>
+      <stop offset="0%" stop-color="#06140d"/>
+      <stop offset="55%" stop-color="#04110b"/>
+      <stop offset="100%" stop-color="#020a07"/>
     </linearGradient>
     <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#3fb950"/>
+      <stop offset="50%" stop-color="#56d364"/>
+      <stop offset="100%" stop-color="#7ee787"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1f6f3f"/>
       <stop offset="100%" stop-color="#56d364"/>
     </linearGradient>
+    <radialGradient id="vig" cx="50%" cy="42%" r="75%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="round"><rect width="1000" height="320" rx="16"/></clipPath>
+    <clipPath id="typeTitle"><rect x="36" y="120" width="0" height="46">
+      <animate attributeName="width" values="0;360" keyTimes="0;1" dur="1.8s" begin="0.3s" fill="freeze" calcMode="linear"/>
+    </rect></clipPath>
+    <clipPath id="typeSub"><rect x="36" y="182" width="0" height="24">
+      <animate attributeName="width" values="0;560" keyTimes="0;1" dur="1.6s" begin="2.0s" fill="freeze" calcMode="linear"/>
+    </rect></clipPath>
     <style>
-      @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
-      .cursor { animation: blink 1.1s step-end infinite; }
-      @keyframes typing { from { width:0 } to { width:100% } }
+      @keyframes fall { from { transform: translateY(-60px); } to { transform: translateY(380px); } }
+      .col { animation-name: fall; animation-iteration-count: infinite; animation-timing-function: linear; }
+      .rc { fill:#2ea043; }
+      .rh { fill:#aff5b4; }
+      @keyframes blink { 0%,48%{opacity:1} 49%,100%{opacity:0} }
+      .cursor { animation: blink 1s steps(1) infinite; }
+      @keyframes scan { 0%{transform:translateY(-10px);opacity:0} 8%{opacity:.55} 92%{opacity:.55} 100%{transform:translateY(320px);opacity:0} }
+      .scan { animation: scan 5.5s linear infinite; }
+      @keyframes flick { 0%,97%{opacity:1} 98%{opacity:.78} 100%{opacity:1} }
+      .crt { animation: flick 6s infinite; }
+      @media (prefers-reduced-motion: reduce){ .col,.scan{animation:none} }
     </style>
   </defs>
 
-  <rect width="900" height="240" rx="14" fill="url(#bg)"/>
-  <rect x="0.5" y="0.5" width="899" height="239" rx="14" fill="none" stroke="#1f6f3f" stroke-opacity="0.5"/>
+  <g clip-path="url(#round)" class="crt">
+    <rect width="1000" height="320" fill="url(#bg)"/>
 
-  <!-- window chrome -->
-  <rect x="0" y="0" width="900" height="40" rx="14" fill="#0c1b13"/>
-  <rect x="0" y="26" width="900" height="14" fill="#0c1b13"/>
-  <circle cx="26" cy="20" r="6" fill="#2ea043"/>
-  <circle cx="48" cy="20" r="6" fill="#3fb950" fill-opacity="0.6"/>
-  <circle cx="70" cy="20" r="6" fill="#56d364" fill-opacity="0.4"/>
-  <text x="450" y="25" text-anchor="middle" fill="#5c8a6e" font-size="13">ahmed@dev — zsh</text>
+    <!-- matrix rain -->
+    <g font-size="15" font-weight="600" opacity="0.30">
+      <text class="col" y="-97" style="animation-duration:8.50s;animation-delay:-2.56s"><tspan x="18" dy="0" class="rh" opacity="1.00">0</tspan><tspan x="18" dy="19" class="rc" opacity="0.89">1</tspan><tspan x="18" dy="19" class="rc" opacity="0.78">0</tspan><tspan x="18" dy="19" class="rc" opacity="0.67">0</tspan><tspan x="18" dy="19" class="rc" opacity="0.56">/</tspan><tspan x="18" dy="19" class="rc" opacity="0.44">}</tspan><tspan x="18" dy="19" class="rc" opacity="0.33"><</tspan><tspan x="18" dy="19" class="rc" opacity="0.22">*</tspan><tspan x="18" dy="19" class="rc" opacity="0.11">=</tspan></text>
+<text class="col" y="-212" style="animation-duration:6.16s;animation-delay:-1.55s"><tspan x="67" dy="0" class="rh" opacity="1.00">0</tspan><tspan x="67" dy="19" class="rc" opacity="0.91">=</tspan><tspan x="67" dy="19" class="rc" opacity="0.82">1</tspan><tspan x="67" dy="19" class="rc" opacity="0.73">1</tspan><tspan x="67" dy="19" class="rc" opacity="0.64">1</tspan><tspan x="67" dy="19" class="rc" opacity="0.55"><</tspan><tspan x="67" dy="19" class="rc" opacity="0.45">カ</tspan><tspan x="67" dy="19" class="rc" opacity="0.36">1</tspan><tspan x="67" dy="19" class="rc" opacity="0.27">ﾐ</tspan><tspan x="67" dy="19" class="rc" opacity="0.18">ｦ</tspan><tspan x="67" dy="19" class="rc" opacity="0.09">*</tspan></text>
+<text class="col" y="-160" style="animation-duration:5.71s;animation-delay:-3.33s"><tspan x="115" dy="0" class="rh" opacity="1.00">ア</tspan><tspan x="115" dy="19" class="rc" opacity="0.92">ﾊ</tspan><tspan x="115" dy="19" class="rc" opacity="0.83">{</tspan><tspan x="115" dy="19" class="rc" opacity="0.75">ﾊ</tspan><tspan x="115" dy="19" class="rc" opacity="0.67">#</tspan><tspan x="115" dy="19" class="rc" opacity="0.58">+</tspan><tspan x="115" dy="19" class="rc" opacity="0.50"><</tspan><tspan x="115" dy="19" class="rc" opacity="0.42">></tspan><tspan x="115" dy="19" class="rc" opacity="0.33">λ</tspan><tspan x="115" dy="19" class="rc" opacity="0.25">0</tspan><tspan x="115" dy="19" class="rc" opacity="0.17">0</tspan><tspan x="115" dy="19" class="rc" opacity="0.08">ﾐ</tspan></text>
+<text class="col" y="-233" style="animation-duration:6.82s;animation-delay:-0.89s"><tspan x="164" dy="0" class="rh" opacity="1.00">0</tspan><tspan x="164" dy="19" class="rc" opacity="0.89">1</tspan><tspan x="164" dy="19" class="rc" opacity="0.78">1</tspan><tspan x="164" dy="19" class="rc" opacity="0.67">0</tspan><tspan x="164" dy="19" class="rc" opacity="0.56">{</tspan><tspan x="164" dy="19" class="rc" opacity="0.44">/</tspan><tspan x="164" dy="19" class="rc" opacity="0.33">1</tspan><tspan x="164" dy="19" class="rc" opacity="0.22">サ</tspan><tspan x="164" dy="19" class="rc" opacity="0.11">{</tspan></text>
+<text class="col" y="-165" style="animation-duration:7.51s;animation-delay:-4.84s"><tspan x="212" dy="0" class="rh" opacity="1.00">}</tspan><tspan x="212" dy="19" class="rc" opacity="0.92"><</tspan><tspan x="212" dy="19" class="rc" opacity="0.85">ﾐ</tspan><tspan x="212" dy="19" class="rc" opacity="0.77">ｦ</tspan><tspan x="212" dy="19" class="rc" opacity="0.69">+</tspan><tspan x="212" dy="19" class="rc" opacity="0.62">#</tspan><tspan x="212" dy="19" class="rc" opacity="0.54">0</tspan><tspan x="212" dy="19" class="rc" opacity="0.46"><</tspan><tspan x="212" dy="19" class="rc" opacity="0.38">1</tspan><tspan x="212" dy="19" class="rc" opacity="0.31">{</tspan><tspan x="212" dy="19" class="rc" opacity="0.23">0</tspan><tspan x="212" dy="19" class="rc" opacity="0.15">0</tspan><tspan x="212" dy="19" class="rc" opacity="0.08">0</tspan></text>
+<text class="col" y="-235" style="animation-duration:6.20s;animation-delay:-0.47s"><tspan x="261" dy="0" class="rh" opacity="1.00">カ</tspan><tspan x="261" dy="19" class="rc" opacity="0.93">$</tspan><tspan x="261" dy="19" class="rc" opacity="0.86">$</tspan><tspan x="261" dy="19" class="rc" opacity="0.79">/</tspan><tspan x="261" dy="19" class="rc" opacity="0.71">ア</tspan><tspan x="261" dy="19" class="rc" opacity="0.64">ﾊ</tspan><tspan x="261" dy="19" class="rc" opacity="0.57">=</tspan><tspan x="261" dy="19" class="rc" opacity="0.50">0</tspan><tspan x="261" dy="19" class="rc" opacity="0.43">#</tspan><tspan x="261" dy="19" class="rc" opacity="0.36">ｧ</tspan><tspan x="261" dy="19" class="rc" opacity="0.29">/</tspan><tspan x="261" dy="19" class="rc" opacity="0.21">ア</tspan><tspan x="261" dy="19" class="rc" opacity="0.14">サ</tspan><tspan x="261" dy="19" class="rc" opacity="0.07">ﾋ</tspan></text>
+<text class="col" y="-257" style="animation-duration:5.09s;animation-delay:-5.75s"><tspan x="309" dy="0" class="rh" opacity="1.00">0</tspan><tspan x="309" dy="19" class="rc" opacity="0.90">ｧ</tspan><tspan x="309" dy="19" class="rc" opacity="0.80">ア</tspan><tspan x="309" dy="19" class="rc" opacity="0.70">0</tspan><tspan x="309" dy="19" class="rc" opacity="0.60">1</tspan><tspan x="309" dy="19" class="rc" opacity="0.50">Δ</tspan><tspan x="309" dy="19" class="rc" opacity="0.40">{</tspan><tspan x="309" dy="19" class="rc" opacity="0.30">λ</tspan><tspan x="309" dy="19" class="rc" opacity="0.20"><</tspan><tspan x="309" dy="19" class="rc" opacity="0.10">0</tspan></text>
+<text class="col" y="-138" style="animation-duration:7.71s;animation-delay:-4.71s"><tspan x="358" dy="0" class="rh" opacity="1.00">ｦ</tspan><tspan x="358" dy="19" class="rc" opacity="0.89">$</tspan><tspan x="358" dy="19" class="rc" opacity="0.78">=</tspan><tspan x="358" dy="19" class="rc" opacity="0.67">Δ</tspan><tspan x="358" dy="19" class="rc" opacity="0.56">Δ</tspan><tspan x="358" dy="19" class="rc" opacity="0.44">0</tspan><tspan x="358" dy="19" class="rc" opacity="0.33">Δ</tspan><tspan x="358" dy="19" class="rc" opacity="0.22">カ</tspan><tspan x="358" dy="19" class="rc" opacity="0.11">0</tspan></text>
+<text class="col" y="-164" style="animation-duration:5.59s;animation-delay:-7.05s"><tspan x="406" dy="0" class="rh" opacity="1.00">1</tspan><tspan x="406" dy="19" class="rc" opacity="0.92">サ</tspan><tspan x="406" dy="19" class="rc" opacity="0.83">ｦ</tspan><tspan x="406" dy="19" class="rc" opacity="0.75">{</tspan><tspan x="406" dy="19" class="rc" opacity="0.67">カ</tspan><tspan x="406" dy="19" class="rc" opacity="0.58">=</tspan><tspan x="406" dy="19" class="rc" opacity="0.50">1</tspan><tspan x="406" dy="19" class="rc" opacity="0.42">ﾊ</tspan><tspan x="406" dy="19" class="rc" opacity="0.33">=</tspan><tspan x="406" dy="19" class="rc" opacity="0.25">1</tspan><tspan x="406" dy="19" class="rc" opacity="0.17">1</tspan><tspan x="406" dy="19" class="rc" opacity="0.08">1</tspan></text>
+<text class="col" y="-162" style="animation-duration:5.62s;animation-delay:-1.79s"><tspan x="455" dy="0" class="rh" opacity="1.00">ア</tspan><tspan x="455" dy="19" class="rc" opacity="0.90">}</tspan><tspan x="455" dy="19" class="rc" opacity="0.80">0</tspan><tspan x="455" dy="19" class="rc" opacity="0.70">1</tspan><tspan x="455" dy="19" class="rc" opacity="0.60">0</tspan><tspan x="455" dy="19" class="rc" opacity="0.50">0</tspan><tspan x="455" dy="19" class="rc" opacity="0.40">1</tspan><tspan x="455" dy="19" class="rc" opacity="0.30">ｦ</tspan><tspan x="455" dy="19" class="rc" opacity="0.20">+</tspan><tspan x="455" dy="19" class="rc" opacity="0.10">=</tspan></text>
+<text class="col" y="-214" style="animation-duration:4.59s;animation-delay:-1.77s"><tspan x="503" dy="0" class="rh" opacity="1.00">0</tspan><tspan x="503" dy="19" class="rc" opacity="0.92">0</tspan><tspan x="503" dy="19" class="rc" opacity="0.85">0</tspan><tspan x="503" dy="19" class="rc" opacity="0.77">カ</tspan><tspan x="503" dy="19" class="rc" opacity="0.69">0</tspan><tspan x="503" dy="19" class="rc" opacity="0.62">1</tspan><tspan x="503" dy="19" class="rc" opacity="0.54">+</tspan><tspan x="503" dy="19" class="rc" opacity="0.46">}</tspan><tspan x="503" dy="19" class="rc" opacity="0.38">ﾐ</tspan><tspan x="503" dy="19" class="rc" opacity="0.31">1</tspan><tspan x="503" dy="19" class="rc" opacity="0.23">ｧ</tspan><tspan x="503" dy="19" class="rc" opacity="0.15">0</tspan><tspan x="503" dy="19" class="rc" opacity="0.08">1</tspan></text>
+<text class="col" y="-92" style="animation-duration:5.21s;animation-delay:-2.24s"><tspan x="552" dy="0" class="rh" opacity="1.00">/</tspan><tspan x="552" dy="19" class="rc" opacity="0.92">ｧ</tspan><tspan x="552" dy="19" class="rc" opacity="0.83">0</tspan><tspan x="552" dy="19" class="rc" opacity="0.75">/</tspan><tspan x="552" dy="19" class="rc" opacity="0.67">0</tspan><tspan x="552" dy="19" class="rc" opacity="0.58">0</tspan><tspan x="552" dy="19" class="rc" opacity="0.50">ﾊ</tspan><tspan x="552" dy="19" class="rc" opacity="0.42">Δ</tspan><tspan x="552" dy="19" class="rc" opacity="0.33">+</tspan><tspan x="552" dy="19" class="rc" opacity="0.25">カ</tspan><tspan x="552" dy="19" class="rc" opacity="0.17">></tspan><tspan x="552" dy="19" class="rc" opacity="0.08">0</tspan></text>
+<text class="col" y="-98" style="animation-duration:8.51s;animation-delay:-6.26s"><tspan x="600" dy="0" class="rh" opacity="1.00">Σ</tspan><tspan x="600" dy="19" class="rc" opacity="0.91">ﾋ</tspan><tspan x="600" dy="19" class="rc" opacity="0.82">サ</tspan><tspan x="600" dy="19" class="rc" opacity="0.73">カ</tspan><tspan x="600" dy="19" class="rc" opacity="0.64">カ</tspan><tspan x="600" dy="19" class="rc" opacity="0.55">λ</tspan><tspan x="600" dy="19" class="rc" opacity="0.45">0</tspan><tspan x="600" dy="19" class="rc" opacity="0.36">Δ</tspan><tspan x="600" dy="19" class="rc" opacity="0.27">カ</tspan><tspan x="600" dy="19" class="rc" opacity="0.18">1</tspan><tspan x="600" dy="19" class="rc" opacity="0.09">/</tspan></text>
+<text class="col" y="-209" style="animation-duration:5.57s;animation-delay:-1.09s"><tspan x="649" dy="0" class="rh" opacity="1.00">+</tspan><tspan x="649" dy="19" class="rc" opacity="0.89">1</tspan><tspan x="649" dy="19" class="rc" opacity="0.78">ﾋ</tspan><tspan x="649" dy="19" class="rc" opacity="0.67">Δ</tspan><tspan x="649" dy="19" class="rc" opacity="0.56">1</tspan><tspan x="649" dy="19" class="rc" opacity="0.44">*</tspan><tspan x="649" dy="19" class="rc" opacity="0.33">ﾊ</tspan><tspan x="649" dy="19" class="rc" opacity="0.22">0</tspan><tspan x="649" dy="19" class="rc" opacity="0.11">*</tspan></text>
+<text class="col" y="-143" style="animation-duration:6.92s;animation-delay:-8.92s"><tspan x="697" dy="0" class="rh" opacity="1.00">></tspan><tspan x="697" dy="19" class="rc" opacity="0.93">{</tspan><tspan x="697" dy="19" class="rc" opacity="0.86">1</tspan><tspan x="697" dy="19" class="rc" opacity="0.79">λ</tspan><tspan x="697" dy="19" class="rc" opacity="0.71">サ</tspan><tspan x="697" dy="19" class="rc" opacity="0.64">ﾊ</tspan><tspan x="697" dy="19" class="rc" opacity="0.57">1</tspan><tspan x="697" dy="19" class="rc" opacity="0.50">ｧ</tspan><tspan x="697" dy="19" class="rc" opacity="0.43">{</tspan><tspan x="697" dy="19" class="rc" opacity="0.36">}</tspan><tspan x="697" dy="19" class="rc" opacity="0.29">+</tspan><tspan x="697" dy="19" class="rc" opacity="0.21">ﾊ</tspan><tspan x="697" dy="19" class="rc" opacity="0.14">0</tspan><tspan x="697" dy="19" class="rc" opacity="0.07">0</tspan></text>
+<text class="col" y="-164" style="animation-duration:4.91s;animation-delay:-1.68s"><tspan x="746" dy="0" class="rh" opacity="1.00">Δ</tspan><tspan x="746" dy="19" class="rc" opacity="0.90">0</tspan><tspan x="746" dy="19" class="rc" opacity="0.80">+</tspan><tspan x="746" dy="19" class="rc" opacity="0.70">ア</tspan><tspan x="746" dy="19" class="rc" opacity="0.60">λ</tspan><tspan x="746" dy="19" class="rc" opacity="0.50">Σ</tspan><tspan x="746" dy="19" class="rc" opacity="0.40">#</tspan><tspan x="746" dy="19" class="rc" opacity="0.30">λ</tspan><tspan x="746" dy="19" class="rc" opacity="0.20">0</tspan><tspan x="746" dy="19" class="rc" opacity="0.10">Δ</tspan></text>
+<text class="col" y="-170" style="animation-duration:8.84s;animation-delay:-7.55s"><tspan x="794" dy="0" class="rh" opacity="1.00">Σ</tspan><tspan x="794" dy="19" class="rc" opacity="0.89">1</tspan><tspan x="794" dy="19" class="rc" opacity="0.78">0</tspan><tspan x="794" dy="19" class="rc" opacity="0.67">λ</tspan><tspan x="794" dy="19" class="rc" opacity="0.56">+</tspan><tspan x="794" dy="19" class="rc" opacity="0.44"><</tspan><tspan x="794" dy="19" class="rc" opacity="0.33">{</tspan><tspan x="794" dy="19" class="rc" opacity="0.22">1</tspan><tspan x="794" dy="19" class="rc" opacity="0.11">ｦ</tspan></text>
+<text class="col" y="-70" style="animation-duration:6.12s;animation-delay:-2.27s"><tspan x="843" dy="0" class="rh" opacity="1.00">#</tspan><tspan x="843" dy="19" class="rc" opacity="0.93">Σ</tspan><tspan x="843" dy="19" class="rc" opacity="0.86">ﾊ</tspan><tspan x="843" dy="19" class="rc" opacity="0.79">1</tspan><tspan x="843" dy="19" class="rc" opacity="0.71">></tspan><tspan x="843" dy="19" class="rc" opacity="0.64">/</tspan><tspan x="843" dy="19" class="rc" opacity="0.57">0</tspan><tspan x="843" dy="19" class="rc" opacity="0.50">ﾊ</tspan><tspan x="843" dy="19" class="rc" opacity="0.43">1</tspan><tspan x="843" dy="19" class="rc" opacity="0.36">1</tspan><tspan x="843" dy="19" class="rc" opacity="0.29">Σ</tspan><tspan x="843" dy="19" class="rc" opacity="0.21">0</tspan><tspan x="843" dy="19" class="rc" opacity="0.14">ﾋ</tspan><tspan x="843" dy="19" class="rc" opacity="0.07">ﾊ</tspan></text>
+<text class="col" y="-64" style="animation-duration:5.65s;animation-delay:-4.43s"><tspan x="891" dy="0" class="rh" opacity="1.00">1</tspan><tspan x="891" dy="19" class="rc" opacity="0.90">0</tspan><tspan x="891" dy="19" class="rc" opacity="0.80">/</tspan><tspan x="891" dy="19" class="rc" opacity="0.70">0</tspan><tspan x="891" dy="19" class="rc" opacity="0.60">0</tspan><tspan x="891" dy="19" class="rc" opacity="0.50">0</tspan><tspan x="891" dy="19" class="rc" opacity="0.40">カ</tspan><tspan x="891" dy="19" class="rc" opacity="0.30">#</tspan><tspan x="891" dy="19" class="rc" opacity="0.20">1</tspan><tspan x="891" dy="19" class="rc" opacity="0.10">$</tspan></text>
+<text class="col" y="-108" style="animation-duration:6.80s;animation-delay:-5.44s"><tspan x="940" dy="0" class="rh" opacity="1.00">カ</tspan><tspan x="940" dy="19" class="rc" opacity="0.92">/</tspan><tspan x="940" dy="19" class="rc" opacity="0.83">1</tspan><tspan x="940" dy="19" class="rc" opacity="0.75">$</tspan><tspan x="940" dy="19" class="rc" opacity="0.67">ｧ</tspan><tspan x="940" dy="19" class="rc" opacity="0.58">$</tspan><tspan x="940" dy="19" class="rc" opacity="0.50">0</tspan><tspan x="940" dy="19" class="rc" opacity="0.42">0</tspan><tspan x="940" dy="19" class="rc" opacity="0.33">#</tspan><tspan x="940" dy="19" class="rc" opacity="0.25">ｧ</tspan><tspan x="940" dy="19" class="rc" opacity="0.17">0</tspan><tspan x="940" dy="19" class="rc" opacity="0.08">0</tspan></text>
+<text class="col" y="-157" style="animation-duration:6.48s;animation-delay:-2.02s"><tspan x="988" dy="0" class="rh" opacity="1.00">0</tspan><tspan x="988" dy="19" class="rc" opacity="0.91">0</tspan><tspan x="988" dy="19" class="rc" opacity="0.82">></tspan><tspan x="988" dy="19" class="rc" opacity="0.73">1</tspan><tspan x="988" dy="19" class="rc" opacity="0.64">0</tspan><tspan x="988" dy="19" class="rc" opacity="0.55">0</tspan><tspan x="988" dy="19" class="rc" opacity="0.45">ア</tspan><tspan x="988" dy="19" class="rc" opacity="0.36">0</tspan><tspan x="988" dy="19" class="rc" opacity="0.27">λ</tspan><tspan x="988" dy="19" class="rc" opacity="0.18">+</tspan><tspan x="988" dy="19" class="rc" opacity="0.09">Σ</tspan></text>
 
-  <!-- terminal body -->
-  <text x="36" y="86" font-size="16" fill="#3fb950">$ <tspan fill="#7ee787">whoami</tspan></text>
-  <text x="36" y="118" font-size="30" font-weight="700" fill="url(#green)">Ahmed Suleiman</text>
-  <text x="36" y="150" font-size="15" fill="#8fbf9f">Full-Stack Developer · Founder of GadgetVault · Product Builder</text>
+    </g>
 
-  <text x="36" y="190" font-size="16" fill="#3fb950">$ <tspan fill="#7ee787">cat focus.txt</tspan></text>
-  <text x="36" y="218" font-size="14" fill="#6fae84">Scalable mobile &amp; web products · clean architecture · real-world impact</text>
+    <!-- vignette -->
+    <rect width="1000" height="320" fill="url(#vig)"/>
 
-  <rect class="cursor" x="566" y="206" width="9" height="16" fill="#56d364"/>
+    <!-- window chrome -->
+    <rect x="0" y="0" width="1000" height="42" fill="#0a1810"/>
+    <line x1="0" y1="42" x2="1000" y2="42" stroke="#1f6f3f" stroke-opacity="0.6"/>
+    <circle cx="28" cy="21" r="6" fill="#ff5f56"/>
+    <circle cx="50" cy="21" r="6" fill="#ffbd2e"/>
+    <circle cx="72" cy="21" r="6" fill="#27c93f"/>
+    <text x="500" y="26" text-anchor="middle" fill="#4f8a66" font-size="13">untitleDdev@gadgetvault: ~/dev</text>
+
+    <!-- terminal body -->
+    <text x="36" y="86" font-size="16" fill="#3fb950">$ <tspan fill="#7ee787" font-weight="600">whoami</tspan> <tspan fill="#3a6b4d">--full</tspan></text>
+
+    <g clip-path="url(#typeTitle)">
+      <text x="36" y="155" font-size="40" font-weight="800" fill="url(#green)" filter="url(#glow)" letter-spacing="0.5">Ahmed Suleiman</text>
+    </g>
+
+    <g clip-path="url(#typeSub)">
+      <text x="36" y="200" font-size="16" fill="#9fdcad">Full-Stack Developer · Founder @ GadgetVault · Product Builder</text>
+    </g>
+
+    <!-- skills loader -->
+    <text x="36" y="244" font-size="15" fill="#3fb950">$ <tspan fill="#7ee787" font-weight="600">./deploy</tspan> <tspan fill="#3a6b4d">--stack=react,node,rn,ts</tspan></text>
+    <rect x="36" y="258" width="600" height="10" rx="5" fill="#0d2417" stroke="#1f6f3f" stroke-opacity="0.7"/>
+    <rect x="36" y="258" width="0" height="10" rx="5" fill="url(#bar)">
+      <animate attributeName="width" values="0;600" dur="2.4s" begin="2.6s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.3 1"/>
+    </rect>
+    <text x="648" y="267" font-size="13" fill="#3a6b4d" font-weight="700">[ LOADING ]
+      <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.9;1" dur="5s" fill="freeze"/>
+    </text>
+    <text x="648" y="267" font-size="13" fill="#7ee787" font-weight="800" opacity="0">[ 100% ONLINE ]
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.92;1" dur="5.2s" fill="freeze"/>
+    </text>
+
+    <!-- blinking cursor -->
+    <rect class="cursor" x="404" y="128" width="11" height="34" fill="#56d364" opacity="0">
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.62;0.62" dur="3.6s" begin="0s" fill="freeze"/>
+    </rect>
+
+    <!-- moving scanline -->
+    <rect class="scan" x="0" y="0" width="1000" height="2" fill="#56d364" opacity="0"/>
+
+    <!-- HUD corner brackets -->
+    <g stroke="#56d364" stroke-width="2" fill="none" opacity="0.8">
+      <path d="M14 58 v-8 h8"/>
+      <path d="M986 58 v-8 h-8"/>
+      <path d="M14 306 v8 h8"/>
+      <path d="M986 306 v8 h-8"/>
+    </g>
+  </g>
+  <rect x="1" y="1" width="998" height="318" rx="15" fill="none" stroke="#1f6f3f" stroke-opacity="0.6"/>
 </svg>
