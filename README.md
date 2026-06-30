@@ -158,16 +158,16 @@ A **business-verification platform** that helps users confirm the legitimacy of 
 
 <img width="100%" src="./divider.svg" alt="" />
 
-## 🐾 Off the Clock
+## 🎮 Off the Clock
 
 <div align="center">
 
-<!-- Real cat & dog GIF (external host). Swap this src for any GIF URL you prefer. -->
-<img width="420" src="https://www.picgifs.com/graphics/c/cats/animaatjes-cats-0150615.gif" alt="A cat and a dog playing" />
+<!-- Call of Duty: Warzone GIF, committed in-repo so GitHub always serves it. Swap cod.gif to change it. -->
+<img width="440" src="./cod.gif" alt="Call of Duty: Warzone — Rebirth Island" />
 
 <br/>
 
-<sub>🐱🐶 currently debugging... with backup.</sub>
+<sub>🎮 when the build goes green — dropping into Warzone.</sub>
 
 </div>
 
