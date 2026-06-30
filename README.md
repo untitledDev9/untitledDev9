@@ -1,65 +1,120 @@
+<div align="center">
+
 # Ahmed Suleiman
 
-**Nigeria, Lagos** | [Open Portfolio](https://untitleddev-portfolio.vercel.app/) | [LinkedIn](https://www.linkedin.com/in/ahmed940)
+### Full-Stack Developer · Founder of GadgetVault · Product Builder
 
-Passionate and experienced web developer with a strong technical skill set, aiming to leverage expertise in developing innovative web applications and drive technological advancements.
+Building scalable mobile and web products from Nigeria — with a focus on clean architecture, modern UI, and real-world impact.
 
-<img align="right" height="300" src="https://raw.githubusercontent.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/main/assets/developer.gif" />
+<br/>
 
-## Programming Languages & Tools
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://untitleddev-portfolio.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmed940)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/untitledDev9)
 
-<p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,js,ts,html,css,python,nodejs,express,mongodb,firebase,git,vscode,mysql,vercel&perline=7" />
-  </a>
-</p>
-
-## Most Used
-
-<p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,js,html,css,nodejs,mongodb,firebase&perline=7" />
-  </a>
-</p>
-
-## Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=untitledDev9&show_icons=true&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&count_private=true" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=untitledDev9&layout=compact&theme=dark&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&border_color=30363d&langs_count=8" height="170" />
 </div>
+
+<br/>
+
+## About
+
+I build products that solve real problems — from device-security platforms to business-verification tools. My work spans the full stack: product design, frontend, backend, mobile, APIs, and database architecture.
+
+Currently founding **GadgetVault** and building **CheckAm**, while leading development teams and shipping production applications across React Native and the web.
+
+- 🔭 Focused on mobile and web products that scale
+- 🧩 Comfortable owning a product end-to-end — design to deployment
+- 🌱 Studying B.Sc. Computer Science at the National Open University of Nigeria
+
+<br/>
+
+## Tech Stack
+
+**Frontend**
+
+![React](https://skillicons.dev/icons?i=react) ![TypeScript](https://skillicons.dev/icons?i=ts) ![JavaScript](https://skillicons.dev/icons?i=js) ![HTML](https://skillicons.dev/icons?i=html) ![CSS](https://skillicons.dev/icons?i=css)
+
+**Mobile**
+
+![React Native](https://skillicons.dev/icons?i=react) ![Expo](https://skillicons.dev/icons?i=expo)
+
+**Backend**
+
+![Node.js](https://skillicons.dev/icons?i=nodejs) ![Express](https://skillicons.dev/icons?i=express) ![Python](https://skillicons.dev/icons?i=python)
+
+**Databases**
+
+![MongoDB](https://skillicons.dev/icons?i=mongodb) ![MySQL](https://skillicons.dev/icons?i=mysql) ![Firebase](https://skillicons.dev/icons?i=firebase)
+
+**Cloud & Tools**
+
+![Vercel](https://skillicons.dev/icons?i=vercel) ![Git](https://skillicons.dev/icons?i=git) ![GitHub](https://skillicons.dev/icons?i=github)
+
+<br/>
+
+## Current Projects
+
+### GadgetVault — *Founder*
+
+A platform that helps people verify and protect their devices: IMEI checking, device verification, lost and stolen device reporting, and tools that let buyers avoid stolen phones and vendors verify devices before purchase.
+
+I own product design, frontend, backend, mobile development, API design, and database architecture.
+
+### CheckAm
+
+A business-verification platform that helps users confirm the legitimacy of businesses and build trust online.
+
+<br/>
 
 ## Experience
 
-- **Founder & Software Developer** at GadgetVault (September 2025 – Present)
-- **Dev Team Lead** at Stainless Technology (March 2025 – December 2025)
-- **Frontend Developer** at Renbo Studio (May 2024 – November 2024)
+**Founder & Software Developer** · GadgetVault — *Sep 2025 – Present*
+
+**Dev Team Lead** · Stainless Technology — *Mar 2025 – Dec 2025*
+
+**Frontend Developer** · Renbo Studio — *May 2024 – Nov 2024*
+
+<br/>
 
 ## Education
 
-- **BSc in Computer Science** — National Open University Nigeria (Sep 2025 – Present)
-- **National Diploma in Computer Science** — Lagos State Polytechnic (Sep 2021 – Oct 2024)
+**B.Sc. Computer Science** · National Open University of Nigeria — *Sep 2025 – Present*
 
-## Languages
+**National Diploma, Computer Science** · Lagos State Polytechnic — *Sep 2021 – Oct 2024*
 
-🇬🇧 English – *Fluent* &nbsp; | &nbsp; Hausa – *Intermediate* &nbsp; | &nbsp; Yoruba – *Native*
+<br/>
 
----
+## GitHub Stats
 
 <div align="center">
-  
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=untitledDev9&theme=dark&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&border=30363d&stroke=30363d&currStreakNum=c9d1d9&sideNums=c9d1d9&sideLabels=c9d1d9&dates=555555" width="70%" />
 
-  <br/><br/>
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=untitledDev9&show_icons=true&hide_border=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=untitledDev9&layout=compact&hide_border=true&theme=tokyonight&langs_count=8" alt="Top Languages" />
 
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=untitledDev9&bg_color=0d1117&color=58a6ff&line=58a6ff&point=FFFFFF&area=true&area_color=58a6ff&hide_border=false&title_color=58a6ff&border_color=30363d" width="95%" />
+<br/>
+
+<img src="https://streak-stats.demolab.com?user=untitledDev9&hide_border=true&theme=tokyonight" alt="GitHub Streak" />
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=untitledDev9&bg_color=1a1b27&color=70a5fd&line=bf91f3&point=70a5fd&area=true&hide_border=true" alt="Activity Graph" />
 
 </div>
 
----
+<br/>
+
+## Get in Touch
+
+I'm open to collaboration, freelance work, and conversations about building good software.
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://untitleddev-portfolio.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmed940)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/untitledDev9)
 
 <div align="center">
-  
-  [![Portfolio](https://img.shields.io/badge/Check_Out_My_Portfolio-58a6ff?style=for-the-badge&logo=vercel&logoColor=white)](https://untitleddev-portfolio.vercel.app/)
+
+<br/>
+
+*Turning ideas into real products.*
 
 </div>
